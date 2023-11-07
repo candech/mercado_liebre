@@ -1,0 +1,460 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+h2{
+    font-weight: 400px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+/*
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}*/
+
+header{
+    background-color: #EAC926;
+    padding: 20px;
+    
+   
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+/*nuevo*/ /*nuevo*/  /*nuevo*//*nuevo*/ /*nuevo*/  /*nuevo*/  
+.main-navbar ul{
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #222222 ;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+
+/*nuevo*/ /*nuevo*/ /*nuevo*/  /*nuevo*/ /*nuevo*/ /*nuevo*/
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    width: 40px;
+    display: block;
+    margin: auto;
+
+
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+    
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    /*main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }*/
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+    .main-navbar{
+        display: none;
+    }
+    footer{
+        display:flex;
+        flex-wrap: nowrap;
+        
+    }
+}
+/*nuevo
+@media (max-width: 769px){
+    nav{
+        display: none;
+    }*/
+/*nuevo*/
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+    /*nuevo*/ /*nuevo*/ /*nuevo*/  /*nuevo*/
+    .top-header{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+        
+    }
+   .burger-menu{
+    display: none;
+   } 
+   .main-navbar{
+    display: flex;
+    
+    justify-content: space-between;
+   }
+   .main-navbar ul{
+    display: flex;
+   }
+   .main-navbar li{
+    margin: 0 5px;
+   }
+   footer{
+    display:flex;
+    flex-wrap: nowrap;
+    
+}
+}
+@media (min-width: 1200px){
+    .logo{
+        max-width: 250px;
+    }
+    .top-header,
+    .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .top-header{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-navbar{
+        margin-top: 25px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400px;
+        text-align: right;
+        margin: 0;
+    }
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        
+        
+    }
+
+}
+
+/*nuevo*/ /*nuevo*/ /*nuevo*/  /*nuevo*/
+/*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+.register{
+    color: #666;
+}
+.usuario-reg, .email-register , .birth_date, .dom-reg, .pass-register{
+    width:50%;
+    background-color: #fff;
+    padding: 8px 0 8px ;
+    border: solid 1px #ebebeb;
+    border-radius: 3px;
+    margin: 12px;
+}
+
+.control-r{
+    margin-top: 10px;
+}
+
+.bnt-enviar, .bnt-borrar{
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    font-size: 13px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: #0022AA
+    
+}
+.bnt-enviar:hover, .bnt-borrar:hover{
+background-color: #666;
+}
+
+/*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+/*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.login-user, .login-pass{
+    width: 100%;
+    margin: 30px 0 30px;
+}
+.user, .pass{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.btn-sub-log{
+    padding: 10px;
+    font-size: 15px;
+    background-color: #1259c3;
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+/*position: absolute;
+top: 30%;
+left: 5%;*/
+
+
+/*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
+footer{
+    display: fixed;
+    background-color: #FFF;
+    padding: 15px 0 15px;
+    margin: 15px 0 0;
+    align-items: flex-end;
+}
+footer div i{
+    margin: 10px;
+    font-size: 2em;
+    color:#03264C;
+    
+}
+footer div i:hover{
+    color: #1259c3;
+}
+
+.icon-footer{
+    text-align: center;
+}
+h5, p{
+    text-align: center;
+}
+
+@media (hover :hover){
+
+    .description{
+        opacity: 0;
+        transition: opacity 450ms;
+    }
+   .description:hover{
+        opacity: 1;
+    }
+    main section article{
+        transition: all 1s;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article i{
+        transition: transform 1s;;
+        }
+        .main-article i{
+            transition: transform 0.3s ease;
+        }
+        
+        .main-article i:hover{
+            transform: rotate(-90deg);
+        }
+        .btn-sub-log:hover{
+            background-color: #0022AA;
+        }
+}
+.submit{
+    border-radius: 20px;
+    border: none;
+    background-color: #FFF;
+    border: 1px solid #666;
+    color: #666;
+    width: 10%;
+    padding: 5px;
+}
+.bnt-submit{
+    border: none;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 100%;
+}
+header .input {
+    background-color: #FFF;
+    border: 1px solid #666;
+    border: none;
+    color: #666;
+    padding: 5px;
+    border-radius: 10px;
+    width: 40vw;
+   
+    
+}
+.search-bar{
+width: 100%;
+border:none;
+
+}
+
+
+
+
+/*nuevo*/
