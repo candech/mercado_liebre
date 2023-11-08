@@ -362,11 +362,9 @@ background-color: #666;
     width: 100%;
 
 }
-
-/*position: absolute;
-top: 30%;
-left: 5%;*/
-
+input:invalid{
+    color: red;
+}
 
 /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
 footer{
