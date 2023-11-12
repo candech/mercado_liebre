@@ -23,7 +23,7 @@
                             <input type="text" placeholder="Buscar productos, marcas y más" class="search-bar">
                         </div>
                         <div class="submit">
-                         <button type="submit" class="bnt-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                         <button type="submit" class="bnt-search"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </form>
@@ -55,6 +55,7 @@
                     
                     <input type="text" name="name" minlength="3" placeholder="Nombre y apellido" class="usuario-reg" required>
                     
+                    
                 </div>
                 <div class="control-r">
                     <input type="text" minlength="3" name="user" placeholder="Nombre de usuario" class="usuario-reg" required>
@@ -73,24 +74,27 @@
                 <br>
                 </div>
                 <div class="control-r">
-                    <input type="text" name="addres" placeholder="Domicilio" class="dom-reg" required >
+                    <input type="text" name="addres" minlength="3" placeholder="Domicilio" class="dom-reg" required >
                 </div>
+                <br>
                 <h4>Perfil del usuario</h4>
+                <br>
                 <div class="profile">
                     <input type="radio" name="profile" value="buy" id="buy" required>
                     <label for="buy">Comprador</label>
-                    <input type="radio" name="profile" value="sell" id="sell">
+                    <input type="radio" name="profile" value="sell" id="sell" required>
                     <label for="sell">Vendedor</label>
                 </div>
-
+                <br>
                 <h4>Intereses</h4>
-                <div class="interests">
+                <br>
+                <div class="interests" >
                     <div>
                         <input type="checkbox" name="interests" value="a" id="a" required>
                         <label for="a">Electro</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="interests" value="b" id="b"required>
+                        <input type="checkbox" name="interests" value="b" id="b" required>
                         <label for="b">Moda</label>
                     </div>
                     <div>
@@ -98,7 +102,7 @@
                         <label for="c">Hogar</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="interests" value="d" id="d"required>
+                        <input type="checkbox" name="interests" value="d" id="d" required>
                         <label for="d">Juguetería</label>
                     </div>
                     <div>
@@ -106,25 +110,24 @@
                         <label for="e">Vida sana</label>
                     </div>
                 </div>
-                
+                <br>
                 <h4>Elegí tu foto de usuario</h4>
-
+                <br>
                 <div >
                     <input type="file" name="avatar" required>
                 </div>
                 <div class="control-r">
                     <input type="password" minlength="8"name="pass" placeholder="Elegí tu contraseña" class="pass-register" required>
-                    
                 </div>
                 <div class="control-r">
                     <input type="password" minlength="8"name="pass_confirm" placeholder="Confirmá tu contraseña" class="pass-register" required>
                     
                 </div>
                 
-                <div>
+                <div class="control-r">
                     <input type="submit"  value="Enviar" class="bnt-enviar">
                 </div>
-                <div>
+                <div class="control-r">
                     <input type="reset" value="Borrar" class="bnt-borrar">
                 </div>
             </form>

@@ -19,19 +19,6 @@ h3{
 p{
     font-size: 12px;
 }
-/*
-div.top-header{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}*/
-
 header{
     background-color: #EAC926;
     padding: 20px;
@@ -80,10 +67,6 @@ header ul li a{
     text-decoration: none;
     color: #000;
 }
-
-
-
-
 
 div.burger-menu i{
     background-color: #0044AA;
@@ -183,15 +166,186 @@ article div.main-article{
     padding: 15px;
 }
 
+/*nuevo*/ /*nuevo*/ /*nuevo*/  /*nuevo*/
+/*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+.register{
+    color: #666;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    
+}
+.usuario-reg, .email-register , .birth_date, .dom-reg, .pass-register{
+    background-color: #fff;
+    padding: 8px 0 8px ;
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    margin-top:15px ;
+}
+
+.control-r{
+    margin-top: 10px;
+}
+
+.bnt-enviar, .bnt-borrar{
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    font-size: 13px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    display: block;
+    margin: auto;
+    background-color: #0022AA;
+    width: 100%;
+    
+}
+.bnt-enviar:hover, .bnt-borrar:hover{
+background-color: #666;
+}
+input:invalid{
+    color: red;
+}
+span.mensaje-error{
+    display: none;
+    color: red;
+}
+input:invalid + span.mensaje-error{
+    display: block;
+}
+/*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+/*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
+.login{
+    color: #666;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 78px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+.login-user, .login-pass{
+    margin-top: 30px;
+    margin-bottom: 30px;
+   width: 100%;
+}
+.user, .pass{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+.btn-sub-log{
+    padding: 10px;
+    font-size: 15px;
+    background-color: #1259c3;
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+
+/*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
+footer{
+    display: fixed;
+    background-color: #FFF;
+    padding: 15px 0 15px;
+    margin: 15px 0 0;
+    align-items: flex-end;
+}
+footer div i{
+    margin: 10px;
+    font-size: 2em;
+    color:#03264C;
+    
+}
+footer div i:hover{
+    color: #1259c3;
+}
+
+.icon-footer{
+    text-align: center;
+}
+h5, p{
+    text-align: center;
+}
+ .description{
+        opacity: 0;
+        transition: opacity 450ms;
+        cursor: default;
+    }
+ .description:hover{
+        opacity: 1;
+    }
+ main section article{
+     transition: all 1s;
+    }
+.main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article i{
+        transition: transform 1s;;
+        }
+        .main-article i{
+            transition: transform 0.3s ease;
+        }
+        
+        .main-article i:hover{
+            transform: rotate(-90deg);
+        }
+        .btn-sub-log:hover{
+            background-color: #0022AA;
+        }
+
+.submit{
+    border-radius: 20px;
+    border: none;
+    background-color: #FFF;
+    border: 1px solid #666;
+    color: #666;
+    padding: 5px;
+}
+.bnt-search{
+    border: none;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+header .input {
+    background-color: #FFF;
+    border: 1px solid #666;
+    border: none;
+    color: #666;
+    padding: 5px;
+    border-radius: 10px;
+    width: 40vw;
+   
+    
+}
+.search-bar{
+width: 100%;
+border:none;
+
+}
+/*nuevo*/
 @media (min-width: 361px){
     main section article .description{
         display: block;
     }
-
-    /*main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }*/
-
+.submit{
+    width: 20%;
+}
+.bnt-submit{
+    width: 100%;
+}
     main section div.products{
         display: flex;
         flex-direction: row;
@@ -216,18 +370,31 @@ article div.main-article{
         flex-wrap: nowrap;
         
     }
+    /*REGISTER*//*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+    .register{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    .usuario-reg, .email-register , .birth_date, .dom-reg, .pass-register{
+        width:100%;
+    }
+    /*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+    /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
+.login{
+    width: 35%;
 }
-/*nuevo
-@media (max-width: 769px){
-    nav{
-        display: none;
-    }*/
-/*nuevo*/
+    /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
+}
+
 @media (min-width: 769px){
     main section div.products article{
         width: 22%;
     }
     /*nuevo*/ /*nuevo*/ /*nuevo*/  /*nuevo*/
+    main section article .description{
+        display: block;
+    }
     .top-header{
         display: flex;
         flex-wrap: wrap;
@@ -252,6 +419,27 @@ article div.main-article{
    .main-navbar li{
     margin: 0 5px;
    }
+   /*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+   .register{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.usuario-reg, .email-register , .birth_date, .dom-reg, .pass-register{
+    width:100%;
+}
+.submit{
+    width: 100%;
+}
+.bnt-submit{
+    width: 100%;
+}
+/*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+/*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
+.login{
+    width: 35%;
+}
+/*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
    footer{
     display:flex;
     flex-wrap: nowrap;
@@ -296,163 +484,24 @@ article div.main-article{
         
         
     }
-
-}
-
-/*nuevo*/ /*nuevo*/ /*nuevo*/  /*nuevo*/
-/*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
-.register{
-    color: #666;
-}
-.usuario-reg, .email-register , .birth_date, .dom-reg, .pass-register{
-    width:50%;
-    background-color: #fff;
-    padding: 8px 0 8px ;
-    border: solid 1px #ebebeb;
-    border-radius: 3px;
-    margin: 12px;
-}
-
-.control-r{
-    margin-top: 10px;
-}
-
-.bnt-enviar, .bnt-borrar{
-    color: #fff;
-    border-radius: 2px;
-    border: none;
-    font-size: 13px;
-    padding: 5px;
-    cursor: pointer;
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-    background-color: #0022AA
-    
-}
-.bnt-enviar:hover, .bnt-borrar:hover{
-background-color: #666;
-}
-
-/*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
-/*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
-.login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 150px;
-}
-.login-user, .login-pass{
-    width: 100%;
-    margin: 30px 0 30px;
-}
-.user, .pass{
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-}
-.btn-sub-log{
-    padding: 10px;
-    font-size: 15px;
-    background-color: #1259c3;
-    color: #fff;
-    border:none;
-    border-radius: 5px;
-    width: 100%;
-
-}
-input:invalid{
-    color: red;
-}
-
-/*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
-footer{
-    display: fixed;
-    background-color: #FFF;
-    padding: 15px 0 15px;
-    margin: 15px 0 0;
-    align-items: flex-end;
-}
-footer div i{
-    margin: 10px;
-    font-size: 2em;
-    color:#03264C;
-    
-}
-footer div i:hover{
-    color: #1259c3;
-}
-
-.icon-footer{
-    text-align: center;
-}
-h5, p{
-    text-align: center;
-}
-
-@media (hover :hover){
-
-    .description{
-        opacity: 0;
-        transition: opacity 450ms;
+    .submit{
+        width: 20%;
     }
-   .description:hover{
-        opacity: 1;
+    .bnt-submit{
+        width: 100%;
     }
-    main section article{
-        transition: all 1s;
+    /*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+    .register{
+        width: 30%;
     }
-    main section article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .usuario-reg, .email-register , .birth_date, .dom-reg, .pass-register{
+        width: 100%;
     }
-    main section article i{
-        transition: transform 1s;;
-        }
-        .main-article i{
-            transition: transform 0.3s ease;
-        }
-        
-        .main-article i:hover{
-            transform: rotate(-90deg);
-        }
-        .btn-sub-log:hover{
-            background-color: #0022AA;
-        }
-}
-.submit{
-    border-radius: 20px;
-    border: none;
-    background-color: #FFF;
-    border: 1px solid #666;
-    color: #666;
-    width: 10%;
-    padding: 5px;
-}
-.bnt-submit{
-    border: none;
-    font-size: 15px;
-    border-radius: 20px;
-    width: 100%;
-}
-header .input {
-    background-color: #FFF;
-    border: 1px solid #666;
-    border: none;
-    color: #666;
-    padding: 5px;
-    border-radius: 10px;
-    width: 40vw;
-   
-    
-}
-.search-bar{
-width: 100%;
-border:none;
-
+    /*REGISTER*/ /*REGISTER*/ /*REGISTER*/ /*REGISTER*/
+    /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*//*LOGIN*/
+    .login{
+        width: 30%;
+    }
+    /*LOGIN*/ /*LOGIN*/ /*LOGIN*/ /*LOGIN*/
 }
 
-
-
-
-/*nuevo*/
